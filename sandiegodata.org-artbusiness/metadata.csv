@@ -1,0 +1,54 @@
+Declare,metatab-latest
+Title,
+Description,
+Identifier,f4d5d8da-8a80-4fe0-be47-b8b5facc4b40
+Name,sandiegodata.org-artbusiness-1
+Dataset,artbusiness
+Origin,sandiegodata.org
+Time,
+Space,
+Grain,
+Variant,
+Version,1
+Created,2018-11-15T18:29:03
+Modified,2018-11-15T22:27:45
+Giturl,https://github.com/sandiegodata-projects/gis-projects.git
+
+Section,Contacts,Email,Organization,Url
+Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com
+
+Section,Documentation,Title,Description,
+Documentation,file:README.md,README,,
+
+Section,References,Name,Description,
+Reference,metapack+http://library.metatab.org/sandiegodata.org-communities-2018-7.csv#tract_links,tracts,Tract boundaries and links to cities and communities,
+Reference,metapack+http://library.metatab.org/sandiegodata.org-communities-2018-7.csv#cities_communities,communities,Names for cities and communities,
+Reference,metapack+http://library.metatab.org/healthyplacesindex.org-healthy_places_index-san_diego-4.zip#hpi,hpi,Healthy Places Index,
+Reference,http://seshat.datasd.org/ttcs/sd_active_businesses_datasd.csv,active_businesses,Active Businesses list,
+
+Section,Resources,Name,Description,
+Datafile,notebooks/Prepare.ipynb#artsg,arts_businesses,,
+
+Section,Schema,DataType,AltName,Description
+Table,arts_businesses,,,
+Table.Column,account_key,integer,,
+Table.Column,address_str,string,,
+Table.Column,apt_suite,string,,
+Table.Column,bus_start_dt,date,,
+Table.Column,business_owner_name,string,,
+Table.Column,business_phone,string,,
+Table.Column,city,string,,
+Table.Column,creation_dt,date,,
+Table.Column,doing_bus_as_name,string,,
+Table.Column,expiration_dt,date,,
+Table.Column,lat,number,,
+Table.Column,lon,number,,
+Table.Column,naics_code,integer,,
+Table.Column,naics_description,string,,
+Table.Column,ownership_type,string,,
+Table.Column,pmb_box,string,,
+Table.Column,po_box,string,,
+Table.Column,state,string,,
+Table.Column,zip,string,,
+Table.Column,BID,string,bid,
+Table.Column,geometry,string,,
